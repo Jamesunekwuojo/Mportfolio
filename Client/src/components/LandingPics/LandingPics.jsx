@@ -1,11 +1,12 @@
 import {Container, Row, Col} from "react-bootstrap";
+import "./LandingPics.css"
 
 const LandingPics = () => {
 
     return (
         <Container>
             <Row>
-                <div className=" d-flex d-flex flex-row">
+                <div className=" d-flex d-flex flex-row  mt-4" >
 
 
                     <Col lg={6} className="m-auto">
@@ -19,7 +20,7 @@ const LandingPics = () => {
                     </Col>
 
                     <Col lg={6} className="">
-                    <img src="image-home.png" alt="Landing Page"/>
+                    <img src="image-home .png" alt="Landing Page"/>
 
 
              
