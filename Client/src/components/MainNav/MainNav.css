@@ -1,13 +1,31 @@
 .nav-link:hover {
   
     background-color: #ff9900; 
-    border-radius: 20px
+    border-radius: 20px;
+    /* padding: 12px 22px; */
+    
 
 }
+
+/* .main-nav {
+    padding:25px;
+} */
 
 .nav-link {
     color: white;
     margin-right: 2rem;
+    padding: 10px 20px; /* Adjust padding as needed */
+    /* transition: padding 0.3s ease;  */
     /* display: flex;
     justify-content: space-between; */
 }
+.navDropdown .dropdown-menu {
+    background-color: pink; /* drop down background color*/
+}
+
+.navDropdown .dropdown-item {
+    color: black; /* Change text color if needed */
+}
+/* .navDropdown .dropdown-item:hover {
+    background-color: #ff9900; /* Change this color for hover effect */
+} */
