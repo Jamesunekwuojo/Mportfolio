@@ -22,7 +22,6 @@ const MainNav = () => {
                 <NavDropdown.Item>Book</NavDropdown.Item>
                 <NavDropdown.Item>Book</NavDropdown.Item>
               </NavDropdown>
-
               <Nav.Link href="#services" >SHOP</Nav.Link>
               <Nav.Link href="#services">CONTACT</Nav.Link>
 

@@ -7,9 +7,7 @@
 
 .nav-link {
     color: white;
-}
-  
-.navItem {
-    display: flex;
-    justify-content: space-between;
+    margin-right: 2rem;
+    /* display: flex;
+    justify-content: space-between; */
 }
