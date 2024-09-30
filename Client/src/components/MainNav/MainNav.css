@@ -1,0 +1,15 @@
+.nav-link:hover {
+  
+    background-color: #ff9900; 
+    border-radius: 20px
+
+}
+
+.nav-link {
+    color: white;
+}
+  
+.navItem {
+    display: flex;
+    justify-content: space-between;
+}
