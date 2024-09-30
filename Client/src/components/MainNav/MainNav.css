@@ -2,6 +2,7 @@
   
     background-color: #ff9900; 
     border-radius: 20px;
+    padding: 10px 20px !important;
     /* padding: 12px 22px; */
     
 
@@ -9,8 +10,9 @@
 
 .active-link {
     background-color:  #ff9900; /* Change this color to highlight active link */
-    padding: 12px 22px; /* Maintain padding to match hover effect */
     border-radius: 20px;
+    padding: 10px 20px !important;
+    color: black;
 }
 
 /* .main-nav {
@@ -20,10 +22,8 @@
 .nav-link {
     color: white;
     margin-right: 2rem;
-    padding: 10px 20px; /* Adjust padding as needed */
-    /* transition: padding 0.3s ease;  */
-    /* display: flex;
-    justify-content: space-between; */
+    padding: 10px 20px !important;
+  
 }
 .navDropdown .dropdown-menu {
     background-color: pink; /* drop down background color*/
