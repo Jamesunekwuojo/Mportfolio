@@ -36,7 +36,7 @@ const MainNav = () => {
               <Nav className="ms-auto ">
                 <Nav.Link
                   href="#home"
-                  classsName={`nav-link ms-3 ${activeLink === '/home' ? 'active-link' : ''}`}
+                  className={`nav-link ms-3 ${activeLink === '/home' ? 'active-link' : ''}`}
                   onClick={()=>handleLinkClick('/home')}
                 >
                   HOME

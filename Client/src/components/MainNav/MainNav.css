@@ -10,6 +10,7 @@
 .active-link {
     background-color:  #ff9900; /* Change this color to highlight active link */
     padding: 12px 22px; /* Maintain padding to match hover effect */
+    border-radius: 20px;
 }
 
 /* .main-nav {
