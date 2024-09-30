@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+import {NavLink} from "react-router-dom"
 import "./MainNav.css"
 
 const MainNav = () => {
@@ -18,8 +19,8 @@ const MainNav = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto ">
-              <Nav.Link href="#home" classsName=''>HOME</Nav.Link>
-              <Nav.Link href="#about" classsName=''>ABOUT</Nav.Link>
+              <NavLink href="#home" classsName='nav-link' activeClassName="active-link">HOME</NavLink>
+              <NavLink href="#about" classsName=''>ABOUT</NavLink>
               <NavDropdown className='navDropdown' title={"RESOURCES"} show={showdropDown} onMouseEnter={()=> setShowdropDown(true)} onMouseLeave={() => setShowdropDown(false)}>
                 <NavDropdown.Item>Book</NavDropdown.Item>
                 <NavDropdown.Item>Blog</NavDropdown.Item>
