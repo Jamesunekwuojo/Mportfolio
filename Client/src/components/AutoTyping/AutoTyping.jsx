@@ -1,5 +1,6 @@
 import  { useState, useEffect } from 'react';
-import "./AutoTyping.css"
+import "./AutoTyping.css";
+import VideoSection from '../VideoSection';
 
 const AutoTyping = () => {
   const textToType = "Empowering Professionals and Businesses to Achieve Purpose and Profitability.";
@@ -27,10 +28,17 @@ const AutoTyping = () => {
   return (
     <div>
       <h1 className='typingText'>{text}</h1>
-      <p className=''>Meet Abiodun Mustapha is a dedicated Personal Development Expert and Business Consultant 
-        committed to empowering professionals and businesses to achieve purpose and profitability.</p>
+      <p className=''>Meet Abiodun Mustapha  a dedicated Personal Development Expert and Business Consultant 
+       </p>
+
+       <div className='d-flex flex-row'>
 
        <button className='startButton' >Start Here</button>
+       <VideoSection></VideoSection>
+
+       </div>
+
+      
     </div>
   );
 };
