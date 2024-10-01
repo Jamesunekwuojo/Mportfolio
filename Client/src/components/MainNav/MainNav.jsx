@@ -25,15 +25,12 @@ const MainNav = () => {
           fixed="top"
           expand="lg"
           style={{ width: "80%", margin: "0 auto", backgroundColor: "#6244C5" }}
-          className="p-4"
+          className="p-2"
         >
           <Container fluid>
             <Navbar.Brand href="#">
-              <div className="d-flex flex-column ">
-                <p className="brandText">Abiodun</p>
-                <p className="brandText">Mustapha</p>
-
-              </div>
+              <img src="logoName.png" alt=''/>
+            
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -121,7 +118,7 @@ const MainNav = () => {
         </Navbar>
 
         {/* landinpic section */}
-        <LandingPics></LandingPics>
+        <LandingPics className='mt-4'></LandingPics>
 
         {/* Scrollable content */}
         {/* <div style={{ backgroundColor: '#fff', padding: '20px', height: '150vh' }}>

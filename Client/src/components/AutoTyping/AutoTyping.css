@@ -3,3 +3,8 @@
     font-size: 40px;
 }
 
+.autoTypingContainer {
+    display: inline-block; /* Keeps the width consistent */
+    min-height: 40px; /* Ensure it maintains height even when empty */
+    overflow: hidden; /* Prevent shifting when clearing text */
+  }

@@ -4,7 +4,7 @@ import VideoSection from '../VideoSection';
 import Button from '../Button/Button.jsx'
 
 const AutoTyping = () => {
-  const textToType =  "Meet Abiodun Mustapha  a dedicated Personal Development Expert and Business Consultant";
+  const textToType =  "Meet Abiodun Mustapha  a dedicated Personal Development";
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
 
@@ -28,9 +28,13 @@ const AutoTyping = () => {
 
   return (
     <div>
-      <h1 className='typingText'>Empowering Professionals and Businesses to Achieve Purpose and Profitability.</h1>
-      <p className=''>{text}
-       </p>
+      <h1 className='typingText '>Empowering Professionals and Businesses to Achieve Purpose and Profitability.</h1>
+      <div className='autoTypingContainer'>
+
+        <p>{text}</p>
+
+      </div>
+     
 
        <div className='d-flex flex-row w-4'>
 
