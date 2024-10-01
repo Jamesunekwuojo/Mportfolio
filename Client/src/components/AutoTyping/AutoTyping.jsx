@@ -4,7 +4,7 @@ import VideoSection from '../VideoSection';
 import Button from '../Button/Button.jsx'
 
 const AutoTyping = () => {
-  const textToType = "Empowering Professionals and Businesses to Achieve Purpose and Profitability.";
+  const textToType =  "Meet Abiodun Mustapha  a dedicated Personal Development Expert and Business Consultant";
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
 
@@ -20,7 +20,7 @@ const AutoTyping = () => {
       const resetTimeout = setTimeout(() => {
         setText(''); // Reset text
         setIndex(0); // Reset index
-      }, 4000); // Wait for 2 seconds before resetting
+      }, 3000); // Wait for 2 seconds before resetting
 
       return () => clearTimeout(resetTimeout); // Clean up reset timeout
     }
@@ -28,8 +28,8 @@ const AutoTyping = () => {
 
   return (
     <div>
-      <h1 className='typingText'>{text}</h1>
-      <p className=''>Meet Abiodun Mustapha  a dedicated Personal Development Expert and Business Consultant 
+      <h1 className='typingText'>Empowering Professionals and Businesses to Achieve Purpose and Profitability.</h1>
+      <p className=''>{text}
        </p>
 
        <div className='d-flex flex-row w-4'>
