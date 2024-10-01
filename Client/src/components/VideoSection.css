@@ -5,4 +5,7 @@
 
 .videoSvg {
     cursor: pointer;
+    animation: zoom 1.5s infinite;
+    transform: transform 0.5 ease;
+
 }
