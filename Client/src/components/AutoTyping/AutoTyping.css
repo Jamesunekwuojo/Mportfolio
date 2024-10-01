@@ -2,3 +2,9 @@
     color: white;
     font-size: 40px;
 }
+
+.startButton {
+    background-color: #ff9900;
+    padding: 10px;
+    border-radius: 20px;
+}

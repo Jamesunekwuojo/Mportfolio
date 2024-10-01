@@ -30,7 +30,7 @@ const AutoTyping = () => {
       <p className=''>Meet Abiodun Mustapha is a dedicated Personal Development Expert and Business Consultant 
         committed to empowering professionals and businesses to achieve purpose and profitability.</p>
 
-       <button >Start Here</button>
+       <button className='startButton' >Start Here</button>
     </div>
   );
 };
