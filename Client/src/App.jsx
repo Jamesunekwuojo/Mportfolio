@@ -1,14 +1,14 @@
 import MainNav from "./components/MainNav/MainNav"
 import Footer from "./components/Footer/Footer"
-import Homepage from "./pages/Homepage";
+import Homepage from "./pages/Homepage.jsx";
 
 const App = () => {
 
   return(
     <>
-    <header>
-      <MainNav></MainNav>
-    </header>
+ 
+    <MainNav></MainNav>
+   
 
     <Homepage></Homepage>
 

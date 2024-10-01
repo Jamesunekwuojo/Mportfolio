@@ -1,10 +1,11 @@
-import About from "./components/About/About.jsx";
+import About from "../components/About/About.jsx";
 
 const Homepage = () => {
 
     return (
-        <div>
-        <About></About>
+        <div className="" style={{height: '100vh'}}>
+          
+           <About></About>
         </div>
     )
 }

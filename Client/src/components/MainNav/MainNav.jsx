@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "./MainNav.css";
+import Homepage from "../../pages/Homepage";
 
 import LandingPics from "../LandingPics/LandingPics";
 
@@ -125,7 +126,8 @@ const MainNav = () => {
           <h1>Your Scrollable Component</h1>
         </div> */}
       </div>
-      <div style={{ height: "100vh" }}>khjkkj</div>
+      {/* <Homepage></Homepage> */}
+      {/* <div style={{ height: "100vh" }}>khjkkj</div> */}
     </>
   );
 };
