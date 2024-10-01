@@ -11,9 +11,7 @@ const LandingPics = () => {
         <div className=" d-flex d-flex flex-row  mt-4">
           <Col lg={6} className="m-auto">
             <AutoTyping></AutoTyping>           
-            Abiodun Mustapha is a Personal Development Expert, Business
-            Development Consultant and Founder of Growth Hub Africa, a community
-            of strategic career leaders and business experts.
+       
         
           </Col>
 

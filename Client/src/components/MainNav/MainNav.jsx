@@ -28,7 +28,13 @@ const MainNav = () => {
           className="p-4"
         >
           <Container fluid>
-            <Navbar.Brand href="#">YourBrand</Navbar.Brand>
+            <Navbar.Brand href="#">
+              <div className="d-flex flex-column ">
+                <p className="brandText">Abiodun</p>
+                <p className="brandText">Mustapha</p>
+
+              </div>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto ">

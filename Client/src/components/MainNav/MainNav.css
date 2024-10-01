@@ -8,6 +8,14 @@
 
 }
 
+/* 
+for positioning the brands */
+.brandText {
+    margin: 0px;
+    padding: 0px;
+
+}
+
 .active-link {
     background-color:  #ff9900; /* Change this color to highlight active link */
     border-radius: 20px;
