@@ -33,7 +33,7 @@ const AutoTyping = () => {
 
        <div className='d-flex flex-row'>
 
-       <button className='startButton' >Start Here</button>
+       <button className='startButton ' >Start Here</button>
        <VideoSection></VideoSection>
 
        </div>
