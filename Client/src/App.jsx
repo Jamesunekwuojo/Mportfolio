@@ -1,5 +1,6 @@
 import MainNav from "./components/MainNav/MainNav"
 import Footer from "./components/Footer/Footer"
+import Homepage from "./pages/Homepage";
 
 const App = () => {
 
@@ -8,6 +9,10 @@ const App = () => {
     <header>
       <MainNav></MainNav>
     </header>
+
+    <Homepage></Homepage>
+
+
   
     <footer>
       <Footer></Footer>
