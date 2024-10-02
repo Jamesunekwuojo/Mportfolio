@@ -3,15 +3,16 @@ import "./Featured.css"
 
 const Featured = () => {
     return (
-        <Container className='w-80 mt-4 '>
+        <Container className='w-80 mt-4 ' style={{height:'100vh'}}>
             <Row>
-                <div className="d-flex flex-row justify-content-center   align-item-center imagediv">
-                    <img src="fut.png" alt="" />
-                    <img src="German.png" alt="" />
-                    <img src="lead.png" alt="" />
+                <div className="d-flex flex-row justify-content-between   ">
+                    <img className="imagediv" src="fut.png" alt="" />
+                    <img className="imagediv" src="lead.png" alt="" />
+                    <img className="imagediv" src="German.png" alt="" />
+                   
                 </div>
 
-                <div>
+                <div className="d-flex flex-row justify-content-center mt-4">
                     <img src="visi.png" alt="" />
                 </div>
             </Row>

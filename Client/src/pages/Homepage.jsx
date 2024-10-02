@@ -14,7 +14,7 @@ const Homepage = () => {
            </Row>
            <About></About>
 
-           <Row ><h2 className='subheader text-center'>Highlight</h2></Row>
+           <Row ><h2 className='subheader text-center '>Highlight</h2></Row>
 
            <Highlight></Highlight>
 
