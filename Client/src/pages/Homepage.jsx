@@ -2,7 +2,8 @@ import About from "../components/About/About.jsx";
 import Highlight from "../components/Highlight/Highlight.jsx";
 import Featured from "../components/Featured/Featured.jsx";
 import CalltoAction from "../components/CalltoAction/CalltoAction.jsx";
-import EmailListing from "../components/EmailListing/EmailListing.jsx"
+import EmailListing from "../components/EmailListing/EmailListing.jsx";
+import Podcast from "../components/Podcast/Podcast.jsx";
 import {Row} from "react-bootstrap";
 import  "./Homepage.css"
 
@@ -34,6 +35,9 @@ const Homepage = () => {
 
            {/* email listing component */}
            <EmailListing></EmailListing>
+
+           {/* Podcast componetn */}
+           <Podcast></Podcast>
         </div>
     )
 }
