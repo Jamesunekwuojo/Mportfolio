@@ -9,7 +9,7 @@ const Highlight = () => {
     setIndex(selectedIndex);
   };
   return (
-    <Container className=" w-80 mt-4  container " style={{ backgroundColor: '#f8f9fa', borderRadius: '15px', height:'80vh'   }}>
+    <Container className=" w-80 mt-4  container " style={{ backgroundColor: '', borderRadius: '15px', height:'80vh'   }}>
       <Row>
         <Col lg={8}>
           <Carousel activeIndex={index} onSelect={handleSelect} interval={2000}>
@@ -39,7 +39,7 @@ const Highlight = () => {
         <Col lg={4}>
           <div className="d-flex flex-column">
             <img className='highlight' src="highlight.jpg" alt="" />
-            <img src="highlight1.jpg" alt="" />
+            <img className='highlight' src="highlight1.jpg" alt="" />
             <img className='highlight' src="speak.jpg" alt="" />
 
           </div>
