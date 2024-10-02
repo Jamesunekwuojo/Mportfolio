@@ -9,7 +9,7 @@ const Highlight = () => {
     setIndex(selectedIndex);
   };
   return (
-    <Container className=" w-80 mt-4  container " style={{ backgroundColor: '', borderRadius: '15px', height:'80vh'   }}>
+    <Container className=" w-80 mt-4  container " style={{ backgroundColor: '', borderRadius: '15px', height:'100vh'   }}>
       <Row>
         <Col lg={8}>
           <Carousel activeIndex={index} onSelect={handleSelect} interval={2000}>

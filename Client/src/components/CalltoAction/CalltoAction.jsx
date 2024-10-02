@@ -1,19 +1,34 @@
 import {Container, Row} from 'react-bootstrap';
+import "./CalltoAction.css"
 
 const CalltoAction = () => {
 
     return (
-        <Container>
-            <Row>
-                <div>
-                    <img src='image3.jpg' alt='abiodun image'/>
+        <Container style={{height:'80vh'}}>
+            <Row >
+                <div className='d-flex flex-row justify-content-between' >
+                    <div>
+                      <img className='imageItem' src='image3.jpg' alt='abiodun image'/>
+
+                    </div>
+
+                    <div>
+
+                      <img className='imageItem' src="speak.jpg" alt="abiodun image" />
+                        
+                    </div>
+
+                    <div>
+
+                     <img className='imageItem' src='highlight1.jpg' alt='abiodun image'/>
+                        
+                    </div>
+                    
+                    
+                  
                 </div>
-                <div>
-                    <img src="speak.jpg" alt="abiodun image" />
-                </div>
-                <div>
-                    <img src='' alt='abiodun image'/>
-                </div>
+
+           
             </Row>
 
         </Container>
