@@ -1,8 +1,24 @@
-
+import {useState} from "react";
 import { Container, Row, Col, Button } from 'react-bootstrap';
-
+import Modalvideo1 from '../Modalvideo1/Modalvideo1';
 
 function Podcast() {
+
+    const [show, setShow] = useState(false); // Modal state
+    const [videoSrc, setVideoSrc] = useState("");
+  
+    const handleShow = () => {
+      setVideoSrc(
+        "https://www.youtube.com/embed/o4D4dE2Qwn0?si=CXZYdn6d4y2tNm2D"
+      ); // Set video source
+      setShow(true); // Show modal
+    };
+  
+    const handleClose = () => {
+      setShow(false); // Hide modal
+      setVideoSrc(""); // Reset video source
+    };
+
   return (
     <Container>
       <Row>
@@ -62,13 +78,14 @@ function Podcast() {
               title="Video 3"
             ></iframe>
             <div className="d-flex justify-content-between mt-2">
-              <Button variant="link" data-bs-toggle="modal" data-bs-target="#videoModal3">
+              <Button variant="link" data-bs-toggle="modal" data-bs-target="#videoModal3" onClick={handleShow}>
                 <i className="bi bi-eye"></i> Watch Video
               </Button>
               <Button variant="link" href="https://www.youtube.com/watch?v=KOmNT-VuAsk" target="_blank">
                 <i className="bi bi-play-btn"></i> Watch on YouTube
               </Button>
             </div>
+            <Modalvideo1 show={show} onHide={handleClose} videoSrc={videoSrc}></Modalvideo1>
           </div>
         </Col>
       </Row>
