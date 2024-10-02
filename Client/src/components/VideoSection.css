@@ -1,5 +1,5 @@
 .button {
-   background-color: ;
+   
    border: 0px !important
 }
 
@@ -13,7 +13,7 @@
     100% {
       transform: scale(1); /* Zoom out */
     }
-  }
+}
 .videoSvg {
     cursor: pointer;
     /* animation: zoom 1.5s infinite; */

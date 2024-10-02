@@ -1,4 +1,28 @@
 .subheader {
     margin-top: 40px;
     color: #6244C5;
+    
 }
+
+/* call to action zoom for book now */
+
+@keyframes zoomInOut {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2); /* Zoom in */
+    }
+    100% {
+      transform: scale(1); /* Zoom out */
+    }
+}
+
+.bookNow {
+    animation: zoomInOut 1.5s infinite ease-in-out;
+    /* transform-origin: center center; */
+}
+
+.parentContainer {
+    overflow: hidden;
+} /* } To control overflow behaviour of zoom effect */
