@@ -1,21 +1,22 @@
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 import { useState } from "react";
+import "./Highlight.css"
 
 const Highlight = () => {
   const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex, e) => {
+  const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
   return (
-    <Container>
+    <Container className=" w-80 mt-4  container " style={{ backgroundColor: '#f8f9fa', borderRadius: '15px', height:'80vh'   }}>
       <Row>
         <Col lg={8}>
           <Carousel activeIndex={index} onSelect={handleSelect} interval={2000}>
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://example.com/image1.jpg" // Replace with the correct image path
+                src="" // Replace with the correct image path
                 alt="First slide"
               />
             </Carousel.Item>
@@ -35,7 +36,17 @@ const Highlight = () => {
             </Carousel.Item>
           </Carousel>
         </Col>
-        <Col lg={4}></Col>
+        <Col lg={4}>
+          <div className="d-flex flex-column">
+            <img className='highlight' src="highlight.jpg" alt="" />
+            <img src="highlight1.jpg" alt="" />
+            <img className='highlight' src="speak.jpg" alt="" />
+
+          </div>
+        
+        
+
+        </Col>
       </Row>
     </Container>
   );
