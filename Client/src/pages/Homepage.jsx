@@ -7,12 +7,12 @@ const Homepage = () => {
     return (
         <div className="" >
           
-           <Row>
+           <Row className='subheader'>
             <h2></h2>
            </Row>
            <About></About>
 
-           <Row cla><h2>Highlight</h2></Row>
+           <Row ><h2 className='subheader text-center'>Highlight</h2></Row>
 
            <Highlight></Highlight>
         </div>
