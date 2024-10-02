@@ -16,6 +16,8 @@ const Homepage = () => {
            <Row ><h2 className='subheader text-center'>Highlight</h2></Row>
 
            <Highlight></Highlight>
+
+           <Row ><h2 className='subheader text-center'>Highlight</h2></Row>
         </div>
     )
 }
