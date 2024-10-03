@@ -1,23 +1,27 @@
 import MainNav from "./components/MainNav/MainNav"
 import Footer from "./components/Footer/Footer"
 import Homepage from "./pages/Homepage.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Shop from "./components/Shop/Shop.jsx"
+import Books from "./components/Books/Books.jsx"
 
 const App = () => {
 
   return(
-    <>
- 
-    <MainNav></MainNav>
-   
+    <Router>
+      <MainNav></MainNav>
 
-    <Homepage></Homepage>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/resources/book" element={<Books />} />
+        <Route path="/shop" element={<Shop />} />
+      </Routes>
 
-
-  
-    <footer>
+      <footer>
       <Footer></Footer>
     </footer>
-    </>
+    </Router>
+   
 
   );
 
