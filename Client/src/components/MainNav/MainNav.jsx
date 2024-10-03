@@ -57,7 +57,7 @@ const MainNav = () => {
                   ABOUT
                 </Nav.Link>
                 <NavDropdown
-                  as={Link}
+                 
                   className="navDropdown"
                   title={"RESOURCES"}
                   show={showdropDown}
@@ -116,7 +116,7 @@ const MainNav = () => {
                   className={`nav-link ${
                     activeLink === "/shop" ? "active-link" : ""
                   }`}
-                  onClick={() => handleLinkClick("/shop")} to="shop"
+                  onClick={() => handleLinkClick("/shop")} to="/shop"
                 >
                   SHOP
                 </Nav.Link>
@@ -125,6 +125,7 @@ const MainNav = () => {
                   as={Link}
                   className={`nav-link ${activeLink === '/contact' ? 'active-link' : ''}`}
                   onClick={() => handleLinkClick('/contact')}
+                  to="/contact"
                 >CONTACT</Nav.Link>
               </Nav>
             </Navbar.Collapse>

@@ -3,3 +3,9 @@
     border-radius: 20px;
     border: 0px;
 }
+
+.link {
+    text-decoration: none;
+    color: black;
+
+}
