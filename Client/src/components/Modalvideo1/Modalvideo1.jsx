@@ -3,7 +3,7 @@ import {Modal} from "react-bootstrap"
 const Modalvideo1 = ({show, onHide, videoSrc}) => {
   return (
     <div>
-      <Modal show={show} onHide={onHide} size="lg" centered>
+      <Modal show={show} onHide={onHide} size="md" centered>
         <Modal.Header closeButton>
           <Modal.Title>
             Watch more Video on{" "}

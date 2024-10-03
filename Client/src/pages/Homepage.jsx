@@ -37,6 +37,7 @@ const Homepage = () => {
            <EmailListing></EmailListing>
 
            {/* Podcast componetn */}
+           <Row><h2 className="subheader text-center">Listen to my Podcasts</h2></Row>
            <Podcast></Podcast>
         </div>
     )
