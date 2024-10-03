@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import Modalvideo1 from '../Modalvideo1/Modalvideo1';
 import Modalvideo2 from "../Modalvideo2/Modalvideo2";
 import Modal3video from "../Modal3video/Modal3video";
-
+import "./Podcast.css"
 function Podcast() {
   const [show, setShow] = useState(false); // Modal state
   const [videoSrc, setVideoSrc] = useState('');
@@ -34,7 +34,7 @@ function Podcast() {
   };
 
   return (
-    <Container className='mt-4'>
+    <Container className='mt-4 container'>
       <Row>
         {/* Video 1 */}
         <Col md={4} className="mb-4">

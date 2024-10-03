@@ -3,7 +3,7 @@ import "./Featured.css"
 
 const Featured = () => {
     return (
-        <Container className='w-80 mt-4 ' style={{height:'100vh'}}>
+        <Container className='w-80 mt-4 ' style={{height:'70vh'}}>
             <Row>
                 <div className="d-flex flex-row justify-content-between   ">
                     <img className="imagediv" src="fut.png" alt="" />

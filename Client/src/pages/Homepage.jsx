@@ -33,12 +33,15 @@ const Homepage = () => {
            <Row ><h2 className='subheader text-center'>Featured</h2></Row>
            <Featured></Featured>
 
+
+            {/* Podcast componetn */}
+            <Row><h2 className="subheader text-center">Listen to my Podcasts</h2></Row>
+           <Podcast></Podcast>
+
            {/* email listing component */}
            <EmailListing></EmailListing>
 
-           {/* Podcast componetn */}
-           <Row><h2 className="subheader text-center">Listen to my Podcasts</h2></Row>
-           <Podcast></Podcast>
+          
         </div>
     )
 }
