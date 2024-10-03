@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./MainNav.css";
 import Homepage from "../../pages/Homepage";
 
@@ -29,7 +29,7 @@ const MainNav = () => {
           className="p-2"
         >
           <Container fluid>
-            <Navbar.Brand href="#">
+            <Navbar.Brand  as={Link} to="/">
               <img src="logoName.png" alt=''/>
             
             </Navbar.Brand>
@@ -37,24 +37,27 @@ const MainNav = () => {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto ">
                 <Nav.Link
-                  href="#home"
+                  as={Link}
                   className={`nav-link ms-3 ${
-                    activeLink === "/home" ? "active-link" : ""
+                    activeLink === "/" ? "active-link" : ""
                   }`}
-                  onClick={() => handleLinkClick("/home")}
+                  onClick={() => handleLinkClick("/")}
+                  to="/"
                 >
                   HOME
                 </Nav.Link>
                 <Nav.Link
-                  href="#about"
+                  as={Link}
                   className={`nav-link ms-3 ${
                     activeLink === "/about" ? "active-link" : ""
                   }`}
                   onClick={() => handleLinkClick("/about")}
+                  to="/about"
                 >
                   ABOUT
                 </Nav.Link>
                 <NavDropdown
+                  as={Link}
                   className="navDropdown"
                   title={"RESOURCES"}
                   show={showdropDown}
@@ -62,54 +65,64 @@ const MainNav = () => {
                   onMouseLeave={() => setShowdropDown(false)}
                 >
                   <NavDropdown.Item
+                    as={Link}
                     className={`nav-link
                       activeLink === "/resources/book" ? "active-link" : ""
                     }`}
                     onClick={() => handleLinkClick("/resources/book")}
+                    to="/resources/book"
                   >
                     Book
                   </NavDropdown.Item>
                   <NavDropdown.Item
+                    as={Link}
                     className={`nav-link
                       activeLink === "/resources/blog" ? "active-link" : ""
                     }`}
                     onClick={() => handleLinkClick("/resources/blog")}
+                    to ="/resources/blog"
                   >
                     Blog
                   </NavDropdown.Item>
 
                   <NavDropdown.Item 
+                     as={Link}
                      className={`nav-link
                       activeLink === "/resources/masteryClass" ? "active-link" : ""
                     }`}
                     onClick={() => handleLinkClick("/resources/masteryClass")}
+                    to="/resources/masteryClass"
                   >
                     Purpose Mastery Masterclass
                   </NavDropdown.Item>
                   <NavDropdown.Item
+                     as={Link}
                      className={ `nav-link
                       activeLink === "/resources/oneCoaching" ? "active-link" : ""
                     }`}
-                    onClick={() => handleLinkClick("/resources/oneCoaching")}
+                    onClick={() => handleLinkClick("/resources/oneCoaching")} to = "/resources/oneCoaching"
                   >One-on-One Coaching</NavDropdown.Item>
                   <NavDropdown.Item
+                     as={Link}
                      className={`nav-link
                       activeLink === "/resources/speakingEng" ? "active-link" : ""
                     }`}
-                    onClick={() => handleLinkClick("/resources/speakingEng")}
+                    onClick={() => handleLinkClick("/resources/speakingEng")} to="/resources/speakingEng"
                   > Speaking Engagement </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link
-                  href="#services"
+
+                  as={Link}
                   className={`nav-link ${
                     activeLink === "/shop" ? "active-link" : ""
                   }`}
-                  onClick={() => handleLinkClick("/shop")}
+                  onClick={() => handleLinkClick("/shop")} to="shop"
                 >
                   SHOP
                 </Nav.Link>
 
-                <Nav.Link href="#services"
+                <Nav.Link 
+                  as={Link}
                   className={`nav-link ${activeLink === '/contact' ? 'active-link' : ''}`}
                   onClick={() => handleLinkClick('/contact')}
                 >CONTACT</Nav.Link>
