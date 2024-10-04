@@ -20,10 +20,16 @@ const Shop = () => {
     },
 
     {
-        title: "Beyond Speaking",
-        price: "₦ 1,000",
-        image: "beyondcover6.jpg",
-      },
+      title: "Beyond Speaking",
+      price: "₦ 1,000",
+      image: "beyondcover6.jpg",
+    },
+
+    {
+      title: "30 Lessons life taught me before 30",
+      price: " ₦ 3000",
+      image: "cover1.jpeg"
+    }
     // Add more book data as needed
   ];
 
