@@ -21,7 +21,6 @@ const Shop = () => {
 
     {
       title: "Beyond Speaking",
-      price: "₦ 1,000",
       image: "beyondcover6.jpg",
     },
 
@@ -29,7 +28,27 @@ const Shop = () => {
       title: "30 Lessons life taught me before 30",
       price: " ₦ 3000",
       image: "cover1.jpeg"
-    }
+    },
+
+    {
+      title: "Making Productive Impact During Nysc",
+      price: " ₦ 550",
+      image: "nysccover7.jpg"
+    },
+
+
+    {
+      title: "Overcoming Hurts Make progress",
+      image: "overcomincover5.jpg"
+    },
+
+
+    {
+      title: "Understanding Your Identity",
+      image: "yourIdentity.jpg"
+    },
+
+ 
     // Add more book data as needed
   ];
 
