@@ -16,7 +16,7 @@ const LandingPics = () => {
           </Col>
 
           <Col lg={6} className="">
-            <img src="image-home .png" alt="Landing Page" />
+            <img style={{width:'380px'}}src="image-home .png" alt="Landing Page" />
           </Col>
         </div>
       </Row>
