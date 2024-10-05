@@ -1,5 +1,6 @@
 
 import { Container, Row, Col, Button, Image } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import "./About.css"
 
 function About() {
@@ -23,8 +24,9 @@ function About() {
 
            He helps professionals and businesses through a process of purpose, productivity and profitability. This he does through speaking engagements, training, personal coaching and writing.
           </p>
-          <Button  className="mt-3 border   button">
-            ABOUT Abiodun
+          <Button style={{color:'black'}} className="mt-3 border   button">
+            <Link id='linkClass' to="/about">Read more</Link>
+            
           </Button>
         </Col>
       </Row>

@@ -1,12 +1,16 @@
 .button {
     border: 1px solid black;
     border-radius: 20px;
-    color: black;
-    background-color: rgb(192, 187, 187);
+  
     padding: 10px;
-    background-color: pink;
+    background-color:  #ff9900 !important
     
 }
-.button:hover {
+
+/* .button:hover {
     background-color: #ff9900;
+} */
+#linkClass {
+    text-decoration: none;
+    color:black
 }
