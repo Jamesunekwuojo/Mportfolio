@@ -17,7 +17,7 @@ const Testimonials = () => {
             </div>
           </Col> */}
 
-          <Col lg={6}>
+          <Col lg={8}>
             <Carousel prevIcon={<FaChevronLeft        className="custom-carousel-icon" />} 
                 nextIcon={<FaChevronRight className="custom-carousel-icon" />}>
               <Carousel.Item>
