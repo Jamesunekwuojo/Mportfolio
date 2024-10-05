@@ -1,4 +1,5 @@
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./Shop.css"; // Create this CSS file for additional grid styling.
 
 const Shop = () => {
@@ -69,7 +70,7 @@ const Shop = () => {
                 <Card.Text>
                   <span className="new-price">{book.price}</span>{" "}
                 </Card.Text>
-                <Button variant="primary">Buy Now</Button>
+                <Button variant="primary"><Link className='linkClass' to="https://selar.co/m/AbiodunMustapha" target="_blank">Buy Now</Link></Button>
               </Card.Body>
             </Card>
           </Col>
