@@ -20,10 +20,7 @@ const Shop = () => {
       image: "partnercover3.jpg",
     },
 
-    {
-      title: "Beyond Speaking",
-      image: "beyondcover6.jpg",
-    },
+  
 
     {
       title: "30 Lessons life taught me before 30",
@@ -37,6 +34,8 @@ const Shop = () => {
       image: "nysccover7.jpg"
     },
 
+    
+
 
     {
       title: "Overcoming Hurts Make progress",
@@ -47,6 +46,11 @@ const Shop = () => {
     {
       title: "Understanding Your Identity",
       image: "yourIdentity.jpg"
+    },
+
+    {
+      title: "Beyond Speaking",
+      image: "beyondcover6.jpg",
     },
 
  

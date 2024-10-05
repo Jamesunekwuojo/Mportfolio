@@ -15,7 +15,7 @@
   }
   
   .new-price {
-    color: green;
+    color: #ff9900;
     font-weight: bold;
   }
   
@@ -32,6 +32,11 @@
 
   .linkClass {
     color: white;
+   
     text-decoration: none;
   }
+
+  /* .button {
+    background-color: #ff9900;
+  } */
   

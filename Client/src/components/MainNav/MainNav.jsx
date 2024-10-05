@@ -25,12 +25,12 @@ const MainNav = () => {
         <Navbar
           fixed="top"
           expand="lg"
-          style={{ width: "80%", margin: "0 auto", backgroundColor: "#6244C5" }}
+          style={{ width: "90%", margin: "0 auto", backgroundColor: "#6244C5" }}
           className="p-2"
         >
           <Container fluid>
             <Navbar.Brand  as={Link} to="/">
-              <img style={{width:'200px'}} src="logoName.png" alt=''/>
+              <img style={{width:'200px'}} src="/logoName.png" alt=''/>
             
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
