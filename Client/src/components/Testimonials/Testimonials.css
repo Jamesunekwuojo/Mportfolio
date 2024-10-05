@@ -1,0 +1,9 @@
+.custom-carousel-icon {
+    color:  black;
+    font-size: 2rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent !important;
+}

@@ -5,7 +5,7 @@ import "./About.css"
 
 function About() {
   return (
-    <Container className="p-4 mt-4 container"  style={{ backgroundColor: '#f8f9fa', borderRadius: '15px', height:'100vh'  }}>
+    <Container className="p-4 mt-4 container"  style={{ backgroundColor: '#f8f9fa', borderRadius: '15px', height:'60vh'  }}>
       <Row>
         <Col md={5}>
           <Image

@@ -4,6 +4,7 @@ import Featured from "../components/Featured/Featured.jsx";
 import CalltoAction from "../components/CalltoAction/CalltoAction.jsx";
 import EmailListing from "../components/EmailListing/EmailListing.jsx";
 import Podcast from "../components/Podcast/Podcast.jsx";
+import Testimonials from "../components/Testimonials/Testimonials.jsx";
 import {Row} from "react-bootstrap";
 import  "./Homepage.css"
 
@@ -13,7 +14,7 @@ const Homepage = () => {
         <div className="" >
           
            <Row className='subheader'>
-           <h2 className='subheader text-center'>Meet Abiodun Mustapha</h2>
+           <h2 className='subheader text-center'>About Abiodun Mustapha</h2>
            </Row>
            <About></About>
 
@@ -32,6 +33,9 @@ const Homepage = () => {
 
            <Row ><h2 className='subheader text-center'>Featured</h2></Row>
            <Featured></Featured>
+
+           {/* Testimonials */}
+           <Testimonials></Testimonials>
 
 
             {/* Podcast componetn */}
