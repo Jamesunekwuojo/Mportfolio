@@ -30,7 +30,7 @@ const MainNav = () => {
         >
           <Container fluid>
             <Navbar.Brand  as={Link} to="/">
-              <img src="logoName.png" alt=''/>
+              <img style={{width:'200px'}} src="logoName.png" alt=''/>
             
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
