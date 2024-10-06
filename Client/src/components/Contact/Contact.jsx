@@ -28,6 +28,7 @@ const Contact = () => {
         </div>
         </Col>
         <Col className="mt-4">
+          <h2>Say hello</h2>
           <Form
           >
             <Row className="g-3">
@@ -77,7 +78,7 @@ const Contact = () => {
                 </Form.Floating>
               </Col>
               <Col xs={12}>
-                <Button className="btn btn-primary py-3 px-5" type="submit">
+                <Button className="button py-3 px-5" type="submit">
                   Send Message
                 </Button>
               </Col>

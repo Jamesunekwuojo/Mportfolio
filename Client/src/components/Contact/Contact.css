@@ -1,5 +1,7 @@
 .sideDiv {
     border: 1px solid black;
     border-radius: 15px;
+    background-color:  #f1bb69;
+   
     /* width:300px */
 }

@@ -11,7 +11,7 @@ function EmailListing() {
             src="emailList.png" // Replace with the actual image path
             alt="Coach Profile"
             fluid
-            style={{ borderRadius: '15px' }}
+            // style={{ borderRadius: '15px' }}
           />
         </Col>
         <Col md={7} className='d-flex align-items-center justify-content-center'>
