@@ -28,7 +28,7 @@ const App = () => {
         <Route path="/resources/masteryClass" element={<CalltoAction />} />
         <Route path="/resources/oneCoaching" element={<CalltoAction />} />
         <Route path="/resources/masteryClass" element={<CalltoAction />} />
-        <Route path="/resources/oneCoaching" element={<CalltoAction />} />
+        <Route path="/resources/sp" element={<CalltoAction />} />
 
        
       </Routes>

@@ -16,7 +16,7 @@ const Highlight = () => {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="" // Replace with the correct image path
+                src="speak.jpg" // Replace with the correct image path
                 alt="First slide"
               />
             </Carousel.Item>
