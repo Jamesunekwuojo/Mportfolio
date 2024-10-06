@@ -19,7 +19,7 @@ function About() {
           <h2 className="mb-3" style={{ color: '#6244C5' }}>
           Personal Development Expert,, Leadership & Business Coach, Trainer and Consultant.
           </h2>
-          <p>
+          <p id="about_text1">
            Abiodun Mustapha is a Personal Development Expert, Business Development Consultant and Founder of Growth Hub Africa, a community of strategic career leaders and business experts.
 
            He helps professionals and businesses through a process of purpose, productivity and profitability. This he does through speaking engagements, training, personal coaching and writing.

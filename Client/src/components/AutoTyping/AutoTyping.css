@@ -7,4 +7,8 @@
     display: inline-block; /* Keeps the width consistent */
     min-height: 40px; /* Ensure it maintains height even when empty */
     overflow: hidden; /* Prevent shifting when clearing text */
-  }
+}
+
+#autoType_text {
+    color: #fff990;
+}
