@@ -1,4 +1,5 @@
-import {Container, Row, Button} from 'react-bootstrap';
+import {Container, Row, } from 'react-bootstrap';
+import {Link} from "react-router-dom"
 import "./CalltoAction.css"
 
 const CalltoAction = () => {
@@ -10,7 +11,7 @@ const CalltoAction = () => {
                     <div className='text-center'>
                       <img className='imageItem' src='/image3.jpg' alt='abiodun image'/>
                       <p>Purpose Mastery Masterclass</p>
-                      <button className='button'>book</button>
+                      <button className='button'><Link className='ctaLink' to="/contact">book</Link></button>
 
                     </div>
 
@@ -19,7 +20,7 @@ const CalltoAction = () => {
                       <img className='imageItem' src="/speak.jpg" alt="abiodun image" />
                       <p>Speaking Engagement</p>
                       <p>1 hr | ₦80,000</p>
-                      <button className='button'>book</button>
+                      <button className='button'><Link className='ctaLink' to="/contact">book</Link></button>
                         
                     </div>
 
@@ -28,7 +29,7 @@ const CalltoAction = () => {
                      <img className='imageItem' src='/highlight1.jpg' alt='abiodun image'/>
                      <p>One-on-One Coaching</p>
                      <p>1 hr 30 min | ₦50,000</p>
-                     <button className='button' >book</button>
+                     <button className='button' ><Link className='ctaLink' to="/contact">book</Link></button>
                         
                     </div>
                     

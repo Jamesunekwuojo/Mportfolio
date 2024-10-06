@@ -72,7 +72,7 @@ const MainNav = () => {
                     onClick={() => handleLinkClick("/resources/book")}
                     to="/resources/book"
                   >
-                    Book
+                    Books
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     as={Link}

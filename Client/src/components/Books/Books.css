@@ -8,4 +8,9 @@
 }
 .book_button {
     background-color: #ff9900;
+    border:0px;
+}
+
+.bookImage {
+    /* height: 300px; */
 }
