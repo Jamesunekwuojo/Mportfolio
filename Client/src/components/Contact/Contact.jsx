@@ -1,11 +1,11 @@
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
-
+import "./Contact.css"
 const Contact = () => {
   return (
     <Container className="mt-4">
       <Row>
         <Col>
-        <div className="sideDiv">
+        <div className="sideDiv p-4">
             <p>My Office:</p>
             <h3>Lagos Nigeria</h3>
             <hr></hr>
