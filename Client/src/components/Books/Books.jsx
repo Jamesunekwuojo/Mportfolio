@@ -64,9 +64,22 @@ const books = [
   },
 
   {
-    image: "/yourIdentity.jpg",
-    header2: "Courage: How Ordinary People Achieve Extraordinary Results",
-    text: "",
+    image: "/wealth.jpeg",
+    header2: "From Why To Wealth : How to Make Profit From Your Purpose",
+
+    text: "Do you earnest desire to fulfil purpose but so worried about how to make money from it?",
+
+
+    text2: "Have you had to do so many things for free but your audience look away when you make an offer to pay for something? ",
+
+    text3:"Then the understanding of purpose financing is what you must go for.",
+
+    text4: "Purpose financing looked so much like an urgent issue...",
+
+
+
+
+
     button:"Get copy",
   },
 
@@ -80,7 +93,7 @@ const books = [
 
     text3: "It has been a great time with you during these 5 years of love, happiness and joy.",
 
-    text4: "",
+    text4: "What an angel you have been, a delight to be with and a treasure to have.",
 
 
 
