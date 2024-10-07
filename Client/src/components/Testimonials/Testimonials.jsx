@@ -7,7 +7,7 @@ const Testimonials = () => {
   return (
     <div className="container-fluid bg-light py-5 my-5" id="testimonial">
       <Container className="py-5">
-        <h1 className="display-5 text-center mb-5">Testimonial</h1>
+        <h1 className="subheader text-center mb-5">Testimonial</h1>
         <Row className="justify-content-center">
           {/* <Col lg={3} className="d-none d-lg-block">
             <div className="testimonial-left h-100">
@@ -34,7 +34,7 @@ const Testimonials = () => {
                       <i className="fa fa-quote-left text-primary"></i>
                     </div>
                   </div>
-                  <p className="fs-5 fst-italic">
+                  <p id="text1" className="fs-5 fst-italic">
                     Abiodun desires to see young people who are below the age of
                     30 understand their life purpose and bring to fruition their
                     dreams of better tomorrow.
@@ -59,7 +59,7 @@ const Testimonials = () => {
                       <i className="fa fa-quote-left text-primary"></i>
                     </div>
                   </div>
-                  <p className="fs-5 fst-italic">
+                  <p id="text2" className="fs-5 fst-italic">
                     Dr Mustapha is meticulous, energetic and trustworthy. He is
                     ever willing to learn. His level of maturity in
                     interpersonal relationships is rated above average.
@@ -81,7 +81,7 @@ const Testimonials = () => {
                       <i className="fa fa-quote-left text-primary"></i>
                     </div>
                   </div>
-                  <p className="fs-5 fst-italic">
+                  <p id="text3"  className="fs-5 fst-italic">
                     Abiodun is easily one of the most disciplined and focused
                     people I have had the privilege to work with. He just gets
                     the work done!

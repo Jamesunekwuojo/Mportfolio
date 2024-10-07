@@ -7,3 +7,7 @@
 .carousel-control-next-icon {
     background-color: transparent !important;
 }
+
+#text1, #text2, #text3 {
+    font-family: Ample Display, sans-serif 
+}  

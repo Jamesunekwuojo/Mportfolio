@@ -14,32 +14,33 @@ const Homepage = () => {
         <div className="" >
           
            <Row className='subheader'>
-           <h2 className='subheader text-center'>About Abiodun Mustapha</h2>
+           <h1 className='subheader text-center'>About Abiodun Mustapha</h1>
            </Row>
            <About></About>
 
-           <Row ><h2 className='subheader text-center '>Highlight</h2></Row>
+           <Row ><h1 className='subheader text-center '>Highlight</h1></Row>
 
            <Highlight></Highlight>
 
            <Row className='parentContainer'>
              <div>
-               <h2 className='subheader text-center bookNow'>Book Now!</h2>
+               <h1 className='subheader text-center bookNow'>Book Now!</h1>
 
              </div>
             
             </Row>
             <CalltoAction></CalltoAction>
 
-           <Row ><h2 className='subheader text-center'>Featured</h2></Row>
+           <Row ><h1 className='subheader text-center'>Featured</h1></Row>
            <Featured></Featured>
 
            {/* Testimonials */}
+          
            <Testimonials></Testimonials>
 
 
             {/* Podcast componetn */}
-            <Row><h2 className="subheader text-center">Listen to my Podcasts</h2></Row>
+            <Row><h1 className="subheader text-center">Listen to my Podcasts</h1></Row>
            <Podcast></Podcast>
 
            {/* email listing component */}
