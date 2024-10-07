@@ -17,7 +17,7 @@ function EmailListing() {
         <Col md={7} className='d-flex align-items-center justify-content-center'>
 
         <Form className="w-75">
-            <p> Get updates & high-level information right in your mail box</p>
+            <h4 className='emailText'> Get updates & high-level information right in your mail box</h4>
             <Form.Group>
 
                 <Form.Label>Name:</Form.Label>
@@ -32,7 +32,7 @@ function EmailListing() {
                 <Form.Control type='email' placeholder='Enter your email'></Form.Control>
             </Form.Group>
 
-            <Button className='d-flex justify-content-center mt-2'>Subscribe</Button>
+            <Button className='button d-flex justify-content-center mt-4'>Subscribe</Button>
         </Form>
 
       
