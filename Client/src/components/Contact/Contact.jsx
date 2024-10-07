@@ -78,14 +78,16 @@ const Contact = () => {
         </Col>
         <Col className="mt-4">
           <h2>Say hello</h2>
-          <Form
+          <Form onSubmit={sendEmail}
           >
             <Row className="g-3">
               <Col md={6}>
                 <Form.Floating>
                   <Form.Control
-                    name="name"
                     type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     id="name"
                     placeholder="Your Name"
                   />
@@ -95,8 +97,10 @@ const Contact = () => {
               <Col md={6}>
                 <Form.Floating>
                   <Form.Control
-                    name="email"
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     id="email"
                     placeholder="Your Email"
                   />
@@ -106,8 +110,10 @@ const Contact = () => {
               <Col xs={12}>
                 <Form.Floating>
                   <Form.Control
-                    name="subject"
                     type="text"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
                     id="subject"
                     placeholder="Subject"
                   />
@@ -119,6 +125,9 @@ const Contact = () => {
                   <Form.Control
                     as="textarea"
                     name="message"
+                    type='text'
+                    value={formData.message}
+                    onChange={handleChange}
                     id="message"
                     placeholder="Leave a message here"
                     style={{ height: "100px" }}
