@@ -61,7 +61,7 @@ const Shop = () => {
   ];
 
   return (
-    <Container className="mt-4" >
+    <Container className="mt-4  shopContainer" >
       <Row className="g-4"> {/* Add g-4 for spacing between columns */}
         {books.map((book, index) => (
           <Col key={index} xs={12} sm={6} md={4} lg={3}> {/* Adjust grid sizes based on screen */}

@@ -36,6 +36,10 @@
     text-decoration: none;
   }
 
+  .shopContainer {
+    height: 140vh;
+  }
+
   /* .button {
     background-color: #ff9900;
   } */
