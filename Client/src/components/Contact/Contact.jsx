@@ -4,6 +4,7 @@ import "./Contact.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter, faFacebook, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import emailjs from 'emailjs-com';
+import { Link } from "react-router-dom";
 
 
 
@@ -61,24 +62,29 @@ const Contact = () => {
         <Col>
         <div className="sideDiv p-4">
             <p>My Office:</p>
-            <h3>Lagos Nigeria</h3>
+            <h3 className="subTexts">Lagos Nigeria</h3>
             <hr></hr>
 
             <p>Mobile No:</p>
-            <h3>+234-814-856-0609
+            <h3 className="subTexts">+234-814-856-0609
             </h3>
             <hr></hr>
 
 
             <p>Email:</p>
-            <h3>contact@abiodunmustapha.com</h3>
+            <h3 className="subTexts">contact@abiodunmustapha.com</h3>
             <hr></hr>
 
             <p>Connect with me on:</p>
-            <FontAwesomeIcon className="mx-2" icon={faXTwitter} size="2x" />
-            <FontAwesomeIcon className="mx-2" icon={faFacebook} size="2x" />
-            <FontAwesomeIcon className="mx-2" icon={faLinkedin} size="2x" />
-            <FontAwesomeIcon className="mx-2"  icon={faInstagram} size="2x" />
+
+            <Link className="contactLink"><FontAwesomeIcon className="mx-2" icon={faXTwitter} size="2x" /></Link>
+
+            <Link className="contactLink"><FontAwesomeIcon className="mx-2" icon={faFacebook} size="2x" /></Link>
+
+            <Link className="contactLink"><FontAwesomeIcon className="mx-2" icon={faLinkedin} size="2x" /></Link>
+
+            <Link className="contactLink"> <FontAwesomeIcon className="mx-2"  icon={faInstagram} size="2x" /></Link>
+           
          
             <hr></hr>
 
