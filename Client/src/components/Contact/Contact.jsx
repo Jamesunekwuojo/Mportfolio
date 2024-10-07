@@ -77,15 +77,15 @@ const Contact = () => {
 
             <p>Follow me on:</p>
 
-            <Link className="contactLink"><FontAwesomeIcon className="mx-2" icon={faXTwitter} size="2x" /></Link>
+            <Link to = "https://x.com/abiodun_mustaph"  target="blank" className="contactLink"><FontAwesomeIcon className="mx-2" icon={faXTwitter} size="2x" /></Link>
 
-            <Link className="contactLink"><FontAwesomeIcon className="mx-2" icon={faFacebook} size="2x" /></Link>
+            <Link to="https://web.facebook.com/officialabiodunmustapha/" target="blank" className="contactLink"><FontAwesomeIcon className="mx-2" icon={faFacebook} size="2x" /></Link>
 
-            <Link className="contactLink"><FontAwesomeIcon className="mx-2" icon={faLinkedin} size="2x" /></Link>
+            <Link to="https://www.linkedin.com/in/abiodunmustapha/"  target="blank" className="contactLink"><FontAwesomeIcon className="mx-2" icon={faLinkedin} size="2x" /></Link>
 
-            <Link className="contactLink"> <FontAwesomeIcon className="mx-2"  icon={faInstagram} size="2x" /></Link>
+            <Link to="https://www.instagram.com/iamabiodunmustapha"  target="blank" className="contactLink"> <FontAwesomeIcon className="mx-2"  icon={faInstagram} size="2x" /></Link>
 
-            <Link className="contactLink"> <FontAwesomeIcon className="mx-2"  icon={faYoutube} size="2x" /></Link>
+            <Link to="https://www.youtube.com/channel/UC4KuhzkY8SNEbEUD78LBo6w?"  target="blank" className="contactLink"> <FontAwesomeIcon className="mx-2"  icon={faYoutube} size="2x" /></Link>
            
          
             <hr></hr>
