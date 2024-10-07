@@ -1,5 +1,6 @@
 import {Container, Row, } from 'react-bootstrap';
 import "./Blog.css"
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
 
@@ -9,29 +10,29 @@ const Blog = () => {
                 <div className='d-flex flex-row justify-content-between ' >
                     <div className='text-center'>
                       <img className='imageItem' src='/blog1.png' alt='abiodun image'/>
-                      <h3>How To Use Your No's</h3>
-                      <p>This how you create advantage from your rejections...</p>
-                      <button className='button'>Read more</button>
+                      <h4>How To Use Your No's</h4>
+                      <p id='text1'>This how you create advantage from your rejections...</p>
+                      <button className='button'><Link className='blog_link' to ="https://abiodunmustaphablog.netlify.app/blog/how%20to%20use%20no's" target='blank'>Read more</Link></button>
 
                     </div>
 
                     <div className='text-center'>
 
                       <img className='imageItem' src="/blog2.jpg" alt="abiodun image" />
-                      <h3>Three Ways To Solve Any Problem</h3>
-                      <p>There are three Ways To Solve Any Problem...</p>
+                      <h4>Three Ways To Solve Any Problem</h4>
+                      <p id="text2">There are three Ways To Solve Any Problem...</p>
                      
-                      <button className='button'>Read more</button>
+                      <button className='button'><Link className='blog_link' to ="https://abiodunmustaphablog.netlify.app/blog/solution" target='blank'>Read more</Link></button>
                         
                     </div>
 
                     <div className='text-center'>
 
                      <img className='imageItem' src='/blog3.jpg' alt='abiodun image'/>
-                     <h3>Best Read Ever</h3>
-                     <p>This May Be The Best Thing You've Read This Year.</p>
+                     <h4>Best Read Ever</h4>
+                     <p id='text3'>This May Be The Best Thing You've Read This Year.</p>
                     
-                     <button className='button' >Read more</button>
+                     <button className='button' ><Link className='blog_link' to ="https://abiodunmustaphablog.netlify.app/blog/read" target='blank'>Read more</Link></button>
                         
                     </div>
                     
