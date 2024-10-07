@@ -2,7 +2,7 @@ import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import { useState } from "react";
 import "./Contact.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXTwitter, faFacebook, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faXTwitter, faFacebook, faLinkedin, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import emailjs from 'emailjs-com';
 import { Link } from "react-router-dom";
 
@@ -75,7 +75,7 @@ const Contact = () => {
             <h3 className="subTexts">contact@abiodunmustapha.com</h3>
             <hr></hr>
 
-            <p>Connect with me on:</p>
+            <p>Follow me on:</p>
 
             <Link className="contactLink"><FontAwesomeIcon className="mx-2" icon={faXTwitter} size="2x" /></Link>
 
@@ -84,6 +84,8 @@ const Contact = () => {
             <Link className="contactLink"><FontAwesomeIcon className="mx-2" icon={faLinkedin} size="2x" /></Link>
 
             <Link className="contactLink"> <FontAwesomeIcon className="mx-2"  icon={faInstagram} size="2x" /></Link>
+
+            <Link className="contactLink"> <FontAwesomeIcon className="mx-2"  icon={faYoutube} size="2x" /></Link>
            
          
             <hr></hr>
@@ -92,7 +94,7 @@ const Contact = () => {
         </div>
         </Col>
         <Col className="mt-4">
-          <h2>Say hello</h2>
+          <h2>Say hello 👋</h2>
           <Form onSubmit={sendEmail}
           >
             <Row className="g-3">
@@ -105,6 +107,7 @@ const Contact = () => {
                     onChange={handleChange}
                     id="name"
                     placeholder="Your Name"
+                    required
                   />
                   <Form.Label>Name:</Form.Label>
                 </Form.Floating>
@@ -118,6 +121,7 @@ const Contact = () => {
                     onChange={handleChange}
                     id="email"
                     placeholder="Your Email"
+                    required
                   />
                  <Form.Label>Email:</Form.Label>
                 </Form.Floating>
@@ -131,6 +135,7 @@ const Contact = () => {
                     onChange={handleChange}
                     id="subject"
                     placeholder="Subject"
+                    required
                   />
                  <Form.Label>Subject:</Form.Label>
                 </Form.Floating>
