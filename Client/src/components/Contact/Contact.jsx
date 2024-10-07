@@ -6,6 +6,12 @@ import { faXTwitter, faFacebook, faLinkedin, faInstagram } from '@fortawesome/fr
 import emailjs from 'emailjs-com';
 
 
+
+const serviceId = import.meta.env.VITE_SERVICE_ID;
+const templateId = import.meta.env.VITE_TEMPLATE_ID;
+const publicId = import.meta.env.VITE_PUBLIC_ID 
+
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -29,13 +35,14 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'YOUR_SERVICE_ID',   // Replace with your EmailJS service ID
-      'YOUR_TEMPLATE_ID',  // Replace with your EmailJS template ID
+      serviceId,   // Replace with your EmailJS service ID
+      templateId,  // Replace with your EmailJS template ID
       e.target,            // Form element itself
-      'YOUR_USER_ID'       // Replace with your EmailJS user ID
+      publicId     // Replace with your EmailJS user ID
     )
     .then((result) => {
       alert('Message sent successfully to ' + formData.recipientEmail);
+      console.log("message sent successfully", result)
     }, (error) => {
       alert('An error occurred. Please try again.');
       console.log(error.text);
