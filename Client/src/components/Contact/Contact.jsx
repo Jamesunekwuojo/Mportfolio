@@ -23,15 +23,11 @@ const Contact = () => {
             <hr></hr>
 
             <p>Connect with me on:</p>
-            <FontAwesomeIcon icon={faXTwitter} size="2x" />
-            <FontAwesomeIcon icon={faFacebook} size="2x" />
-            <FontAwesomeIcon icon={faLinkedin} size="2x" />
-            <FontAwesomeIcon icon={faXTwitter} size="2x" />
-           
-            {/* <i className="bi bi-linkedin fs-3 mx-2"></i>
-            <i className="bi bi-facebook fs-3"></i>
-            <i className="bi bi-twitter"></i>
-            <i className="bi bi-instagram fs-3"></i> */}
+            <FontAwesomeIcon className="mx-2" icon={faXTwitter} size="2x" />
+            <FontAwesomeIcon className="mx-2" icon={faFacebook} size="2x" />
+            <FontAwesomeIcon className="mx-2" icon={faLinkedin} size="2x" />
+            <FontAwesomeIcon className="mx-2"  icon={faInstagram} size="2x" />
+         
             <hr></hr>
 
             
