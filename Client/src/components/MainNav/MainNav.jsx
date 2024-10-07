@@ -30,7 +30,13 @@ const MainNav = () => {
         >
           <Container fluid>
             <Navbar.Brand  as={Link} to="/">
-              <img style={{width:'200px'}} src="/logoName.png" alt=''/>
+              <div className='d-flex flex-column'>
+                <h2 className="brandText">Mustapha </h2>
+                <h2 className="brandText">Abiodun</h2>
+
+              </div>
+             
+              {/* <img style={{width:'200px'}} src="/logoName.png" alt=''/> */}
             
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
