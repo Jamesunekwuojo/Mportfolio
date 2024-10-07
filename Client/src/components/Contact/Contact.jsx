@@ -1,8 +1,51 @@
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
+import { useState } from "react";
 import "./Contact.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter, faFacebook, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import emailjs from 'emailjs-com';
+
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    recipientEmail: '',  // Added recipient email field
+    subject: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+
+
+  // Email Js semail send function
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'YOUR_SERVICE_ID',   // Replace with your EmailJS service ID
+      'YOUR_TEMPLATE_ID',  // Replace with your EmailJS template ID
+      e.target,            // Form element itself
+      'YOUR_USER_ID'       // Replace with your EmailJS user ID
+    )
+    .then((result) => {
+      alert('Message sent successfully to ' + formData.recipientEmail);
+    }, (error) => {
+      alert('An error occurred. Please try again.');
+      console.log(error.text);
+    });
+
+    e.target.reset(); // Reset form after submission
+  };
+
+
+
   return (
     <Container className="mt-4">
       <Row>
