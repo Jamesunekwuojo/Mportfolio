@@ -11,14 +11,15 @@ const serviceId = import.meta.env.VITE_SERVICE_ID;
 const templateId = import.meta.env.VITE_TEMPLATE_ID;
 const publicId = import.meta.env.VITE_PUBLIC_ID 
 
+console.log(serviceId, templateId, publicId); // Add this line to check if they are correctly loaded
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    recipientEmail: '',  // Added recipient email field
     subject: '',
-    message: ''
+    message: '',
   });
 
   const handleChange = (e) => {
@@ -45,6 +46,7 @@ const Contact = () => {
       console.log("message sent successfully", result)
     }, (error) => {
       alert('An error occurred. Please try again.');
+      console.log(error)
       console.log(error.text);
     });
 
