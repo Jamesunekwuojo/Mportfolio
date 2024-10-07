@@ -38,19 +38,22 @@ const Shop = () => {
 
 
     {
-      title: "Overcoming Hurts Make progress",
-      image: "overcomincover5.jpg"
+      title: " From Why To Wealth ",
+      image: "wealth.jpeg",
+      price: " ₦ 1,000",
     },
 
 
     {
-      title: "Understanding Your Identity",
-      image: "yourIdentity.jpg"
+      title: "Productizing Your Knowledge",
+      image: "knowledge.jpg",
+      price: " ₦ 1,000",
     },
 
     {
-      title: "Beyond Speaking",
-      image: "beyondcover6.jpg",
+      title: "Personal Money Manager Sheet",
+      image: "moneyManager.png",
+      price: " ₦ 1,000",
     },
 
  
