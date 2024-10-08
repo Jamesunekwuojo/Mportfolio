@@ -55,6 +55,11 @@ for positioning the brands */
     width:90%;
     margin: 0 auto;
     background-color: #6244C5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 
@@ -81,5 +86,21 @@ for positioning the brands */
     .navbar-toggler {
         margin-right: 0;
     }
+
+    /* Remove the right-hand margin on links */
+    .ms-3 {
+        margin-left: 0 !important;
+    }
+
+    .navbarCustom {
+        width: 100%; /* Optional: Set width to 100% for mobile */
+        margin: 0; /* Remove margin for mobile */
+        position: static; /* Remove fixed positioning */
+        top: auto; /* Reset top */
+        left: auto; /* Reset left */
+        right: auto; /* Reset right */
+        /* Any other mobile-specific styles can go here */
+    }
+
  
 }
