@@ -45,3 +45,13 @@ for positioning the brands */
 /* .navDropdown .dropdown-item:hover {
     background-color: #ff9900; /* Change this color for hover effect */
 
+.mainnavDiv {
+    height: 100vh;
+    width: 100vw;
+}    
+@media (max-width: 768px) {
+    .mainnavDiv {
+        height: fit-content;
+    }
+    
+}

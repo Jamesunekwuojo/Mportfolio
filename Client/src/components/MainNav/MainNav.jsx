@@ -19,8 +19,8 @@ const MainNav = () => {
 
   return (
     <>
-      <div
-        style={{ backgroundColor: "#6244C5", height: "100vh", width: "100%" }}
+      <div className='mainnavDiv'
+        style={{ backgroundColor: "#6244C5",  }}
       >
         <Navbar
           fixed="top"
@@ -139,7 +139,7 @@ const MainNav = () => {
         </Navbar>
 
         {/* landinpic section */}
-        <LandingPics className='mt-4'></LandingPics>
+        <LandingPics className=' landingpicsContainer '></LandingPics>
 
         {/* Scrollable content */}
         {/* <div style={{ backgroundColor: '#fff', padding: '20px', height: '150vh' }}>
