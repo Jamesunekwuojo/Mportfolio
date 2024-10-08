@@ -6,7 +6,8 @@ import EmailListing from "../components/EmailListing/EmailListing.jsx";
 import Podcast from "../components/Podcast/Podcast.jsx";
 import Testimonials from "../components/Testimonials/Testimonials.jsx";
 import {Row} from "react-bootstrap";
-import  "./Homepage.css"
+import  "./Homepage.css";
+
 
 const Homepage = () => {
 
@@ -45,6 +46,8 @@ const Homepage = () => {
 
            {/* email listing component */}
            <EmailListing></EmailListing>
+
+
 
           
         </div>

@@ -1,5 +1,5 @@
 import MainNav from "./components/MainNav/MainNav"
-import Footer from "./components/Footer/Footer"
+
 import Homepage from "./pages/Homepage.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Shop from "./components/Shop/Shop.jsx"
@@ -25,17 +25,15 @@ const App = () => {
         {/* Resources routes */}
         <Route path="/resources/book" element={<Books />} />
         <Route path="/resources/blog" element={<Blog />} />
-        <Route path="/resources/masteryClass" element={<CalltoAction />} />
+      
         <Route path="/resources/oneCoaching" element={<CalltoAction />} />
         <Route path="/resources/masteryClass" element={<CalltoAction />} />
-        <Route path="/resources/sp" element={<CalltoAction />} />
+        {/* <Route path="/resources/speakingEng" element={<CalltoAction />} /> */}
 
        
       </Routes>
 
-      <footer>
-      <Footer></Footer>
-    </footer>
+    
     </Router>
    
 
