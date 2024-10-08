@@ -8,7 +8,7 @@ const LandingPics = () => {
   return (
     <Container>
       <Row>
-        <div className=" d-flex d-flex flex-row  mt-4">
+        <div className="landingContainer   mt-4">
           <Col lg={6} className="m-auto">
             <AutoTyping></AutoTyping>           
        
