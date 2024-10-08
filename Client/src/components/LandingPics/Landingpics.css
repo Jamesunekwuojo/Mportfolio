@@ -1,7 +1,26 @@
 
+.mainhomeImage {
+    width: 410px
+}
+
+.landingContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+
 @media (max-width:768px) {
     .landingContainer {
         display: flex;
         flex-direction: column;
+    }
+
+    .imageDiv {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mainhomeImage {
+        width: 300px;
     }
 }

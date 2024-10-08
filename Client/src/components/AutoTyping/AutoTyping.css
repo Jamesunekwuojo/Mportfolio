@@ -1,5 +1,6 @@
-.typingText {
+.headerText {
     color: white;
+    
     font-size: 40px;
 }
 
@@ -11,4 +12,14 @@
 
 #autoType_text {
     color: #fff990;
+}
+
+@media (max-width:768px) {
+    .headerText {
+        color: white;
+        margin-top: 100px;
+        
+        
+    }
+    
 }

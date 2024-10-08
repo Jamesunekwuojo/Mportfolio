@@ -28,7 +28,7 @@ const AutoTyping = () => {
 
   return (
     <div>
-      <h1 className='typingText '>Empowering Professionals and Businesses to Achieve Purpose and Profitability.</h1>
+      <h1 className='headerText '>Empowering Professionals and Businesses to Achieve Purpose and Profitability.</h1>
       <div className='autoTypingContainer'>
 
         <p id='autoType_text'>{text}</p>

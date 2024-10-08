@@ -20,13 +20,12 @@ const MainNav = () => {
   return (
     <>
       <div className='mainnavDiv'
-        style={{ backgroundColor: "#6244C5",  }}
+      
       >
         <Navbar
-          fixed="top"
+          // fixed="top"
           expand="lg"
-          style={{ width: "90%", margin: "0 auto", backgroundColor: "#6244C5" }}
-          className="p-2"
+          className="p-2 navbarCustom"
         >
           <Container fluid>
             <Navbar.Brand  as={Link} to="/">
