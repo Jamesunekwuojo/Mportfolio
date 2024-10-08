@@ -65,10 +65,53 @@ for positioning the brands */
 
 
 
-
-@media (max-width: 768px) {
+/*mobile*/
+@media (max-width: 767px) {
     .mainnavDiv {
-        height: 180vh;
+        height: 120vh;
+        overflow-x: hidden;
+    
+       
+    }
+
+     /* Adjust padding for navbar links */
+     .nav-link {
+        margin-right: 0;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+    }
+    
+    .navbar-toggler {
+        margin-right: 0;
+    }
+
+    /* Remove the right-hand margin on links */
+    .ms-3 {
+        margin-left: 0 !important;
+    }
+
+    .navbarCustom {
+        width: 100%; /* Optional: Set width to 100% for mobile */
+        margin: 0; /* Remove margin for mobile */
+        position: static; /* Remove fixed positioning */
+        top: auto; /* Reset top */
+        left: auto; /* Reset left */
+        right: auto; /* Reset right */
+        /* Any other mobile-specific styles can go here */
+    }
+
+ 
+}
+
+/* mediu devices */
+
+
+
+@media (max-width: 991px) {
+    .mainnavDiv {
+        height: auto;
         overflow-x: hidden;
     
        
