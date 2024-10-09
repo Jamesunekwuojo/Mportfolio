@@ -8,6 +8,7 @@ import MainAbout from "./components/MainAbout/MainAbout.jsx";
 import Blog from "./components/Blog/Blog.jsx";
 import CalltoAction from "./components/CalltoAction/CalltoAction.jsx";
 import Contact from "./components/Contact/Contact.jsx";
+import Footer from "./components/Footer/Footer.jsx"
 
 const App = () => {
 
@@ -32,6 +33,7 @@ const App = () => {
 
        
       </Routes>
+      <Footer></Footer>
 
     
     </Router>
