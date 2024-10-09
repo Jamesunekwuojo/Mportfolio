@@ -13,10 +13,10 @@ import Podcast from "./components/Podcast/Podcast.jsx";
 import Highlight from "./components/Highlight/Highlight.jsx";
 import Testimonials from "./components/Testimonials/Testimonials.jsx";
 import About from "./components/About/About.jsx";
-import {toast} from 'react-toastify'
+// import {toast} from 'react-toastify'
 const App = () => {
 
-  toast.configure(); // correct configuration of toast messahes
+  // toast.configure(); // correct configuration of toast messahes
 
   return(
     <Router>

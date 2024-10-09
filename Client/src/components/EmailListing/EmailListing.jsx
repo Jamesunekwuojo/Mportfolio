@@ -3,7 +3,8 @@ import "./EmailListing.css";
 import emailjs from "emailjs-com";
 import { useState } from "react";
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import Swal from 'sweetalert2';
+
 
 const serviceId = import.meta.env.VITE_SERVICE_ID;
 const templateId = import.meta.env.VITE_TEMPLATE_ID2;
@@ -37,14 +38,22 @@ function EmailListing() {
       .then(
         (result) => {
           alert("Message sent successfully to " + formData.recipientEmail);
-          toast.success(
-            "Message sent successfully to " + formData.recipientEmail
-          );
+          Swal.fire({
+            title: 'Success!',
+            text: 'Subscribed successfully.',
+            icon: 'success',
+            confirmButtonText: 'OK'
+          });
           console.log("message sent successfully", result);
         },
         (error) => {
           alert("An error occurred. Please try again.");
-          toast.error("An error occurred. Please try again");
+          Swal.fire({
+            title: 'Error!',
+            text: 'An error occurred.Please try again.',
+            icon: 'error',
+            confirmButtonText: 'OK'
+          });
           console.log(error);
           console.log(error.text);
         }

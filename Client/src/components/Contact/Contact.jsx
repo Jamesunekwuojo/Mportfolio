@@ -5,8 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter, faFacebook, faLinkedin, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import emailjs from 'emailjs-com';
 import { Link } from "react-router-dom";
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import Swal from 'sweetalert2';
 
 
 
@@ -47,11 +46,23 @@ const Contact = () => {
     )
     .then((result) => {
       alert('Message sent successfully to ' + formData.recipientEmail);
-      toast.success('Message sent successfully to ' + formData.recipientEmail);
+
+      Swal.fire({
+        title: 'Success!',
+        text: 'Message dent successfully.',
+        icon: 'success',
+        confirmButtonText: 'OK'
+      });
+     
       console.log("message sent successfully", result)
     }, (error) => {
       alert('An error occurred. Please try again.');
-      toast.error('An error occurred. Please try again')
+      Swal.fire({
+        title: 'Error!',
+        text: 'An error occurred. Please try again',
+        icon: 'error',
+        confirmButtonText: 'OK'
+      });
       console.log(error)
       console.log(error.text);
     });

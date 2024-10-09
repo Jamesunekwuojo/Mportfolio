@@ -105,7 +105,7 @@ const books = [
 
 function About() {
   return (
-    <Container className="p-4 mt-4 container"  style={{ backgroundColor: '#f8f9fa', borderRadius: '15px', height:'80vh'  }}>
+    <Container className="p-4 mt-4 bookContainer"  style={{ backgroundColor: '#f8f9fa', borderRadius: '15px'   }}>
       <Row>
         {books.map((book, index) => (
           <Row key={index} className=" bookAd">
