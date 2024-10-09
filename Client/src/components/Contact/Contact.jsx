@@ -5,6 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter, faFacebook, faLinkedin, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import emailjs from 'emailjs-com';
 import { Link } from "react-router-dom";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 
@@ -44,9 +47,11 @@ const Contact = () => {
     )
     .then((result) => {
       alert('Message sent successfully to ' + formData.recipientEmail);
+      toast.success('Message sent successfully to ' + formData.recipientEmail);
       console.log("message sent successfully", result)
     }, (error) => {
       alert('An error occurred. Please try again.');
+      toast.error('An error occurred. Please try again')
       console.log(error)
       console.log(error.text);
     });

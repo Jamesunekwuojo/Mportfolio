@@ -1,6 +1,7 @@
 
 import { Container, Row, Col,  Image, Form, Button } from 'react-bootstrap';
-import "./EmailListing.css"
+import "./EmailListing.css";
+import emailjs from 'emailjs-com'
 
 function EmailListing() {
   return (
