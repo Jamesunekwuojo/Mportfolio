@@ -1,11 +1,67 @@
-
-import { Container, Row, Col,  Image, Form, Button } from 'react-bootstrap';
+import { Container, Row, Col, Image, Form, Button } from "react-bootstrap";
 import "./EmailListing.css";
-import emailjs from 'emailjs-com'
+import emailjs from "emailjs-com";
+import { useState } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const serviceId = import.meta.env.VITE_SERVICE_ID;
+const templateId = import.meta.env.VITE_TEMPLATE_ID2;
+const publicId = import.meta.env.VITE_PUBLIC_ID;
+
+console.log(serviceId, templateId, publicId);
 
 function EmailListing() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        serviceId, // Replace with your EmailJS service ID
+        templateId, // Replace with your EmailJS template ID
+        e.target, // Form element itself
+        publicId // Replace with your EmailJS user ID
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully to " + formData.recipientEmail);
+          toast.success(
+            "Message sent successfully to " + formData.recipientEmail
+          );
+          console.log("message sent successfully", result);
+        },
+        (error) => {
+          alert("An error occurred. Please try again.");
+          toast.error("An error occurred. Please try again");
+          console.log(error);
+          console.log(error.text);
+        }
+      );
+
+    e.target.reset(); // Reset form after submission
+  };
+
   return (
-    <Container className="p-4 mt-4 container"  style={{ backgroundColor: '#f8f9fa', borderRadius: '15px', height:'100vh'  }}>
+    <Container
+      className="p-4 mt-4 container"
+      style={{
+        backgroundColor: "#f8f9fa",
+        borderRadius: "15px",
+        height: "100vh",
+      }}
+    >
       <Row>
         <Col md={5}>
           <Image
@@ -15,28 +71,44 @@ function EmailListing() {
             // style={{ borderRadius: '15px' }}
           />
         </Col>
-        <Col md={7} className='d-flex align-items-center justify-content-center'>
-
-        <Form className="w-75">
-            <h4 className='emailText'> Get updates & high-level information right in your mail box</h4>
+        <Col
+          md={7}
+          className="d-flex align-items-center justify-content-center"
+        >
+          <Form className="w-75" onSubmit={sendEmail}>
+            <h4 className="emailText">
+              {" "}
+              Get updates & high-level information right in your mail box
+            </h4>
             <Form.Group>
+              <Form.Label>Name:</Form.Label>
 
-                <Form.Label>Name:</Form.Label>
-           
-                <Form.Control placeholder='Enter your name'>
-                </Form.Control>
-
+              <Form.Control
+                placeholder="Enter your name"
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              ></Form.Control>
             </Form.Group>
 
             <Form.Group>
-                <Form.Label> Email:</Form.Label>
-                <Form.Control type='email' placeholder='Enter your email'></Form.Control>
+              <Form.Label> Email:</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="Enter your email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              ></Form.Control>
             </Form.Group>
 
-            <Button className='button d-flex justify-content-center mt-4'>Subscribe</Button>
-        </Form>
-
-      
+            <Button type='submit' className="button d-flex justify-content-center mt-4">
+              Subscribe
+            </Button>
+          </Form>
         </Col>
       </Row>
     </Container>

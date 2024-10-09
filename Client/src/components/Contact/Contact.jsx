@@ -15,7 +15,7 @@ const serviceId = import.meta.env.VITE_SERVICE_ID;
 const templateId = import.meta.env.VITE_TEMPLATE_ID;
 const publicId = import.meta.env.VITE_PUBLIC_ID 
 
-console.log(serviceId, templateId, publicId); // Add this line to check if they are correctly loaded
+console.log(serviceId, templateId, publicId); //  To check if they are correctly loaded
 
 
 const Contact = () => {
