@@ -1,6 +1,7 @@
 
 import { Container, Row, Col } from 'react-bootstrap';
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+import "./Footer.css"
 
 const Footer = () => {
   return (
@@ -10,33 +11,32 @@ const Footer = () => {
           <Col md={3}>
             <h5>Homepage</h5>
             <ul className="list-unstyled">
-              <li><Link to="/podcasts" className="text-light">Podcasts</Link></li>
-              <li><Link to="/highlight" className="text-light">Highlights</Link></li>
-              <li><Link to="/about" className="text-light">About</Link></li>
-              <li><Link to="/testimonials" className="text-light">Testimonials</Link></li>
-              <li><Link to="/" className="text-light">Public speaking</Link></li>
+              <li><Link to="/podcasts" className="text-light footerLink">Podcasts</Link></li>
+              <li><Link to="/highlight" className="text-light footerLink">Highlights</Link></li>
+              <li><Link to="/about" className="text-light footerLink">About</Link></li>
+              <li><Link to="/testimonials" className="text-light footerLink">Testimonials</Link></li>
+              <li><Link to="/publicSpeak" className="text-light footerLink">Public speaking</Link></li>
             </ul>
           </Col>
           <Col md={3}>
             <h5>Shop</h5>
             <ul className="list-unstyled">
-              <li><a href="#products" className="text-light">Products</a></li>
-              <li><a href="#offers" className="text-light">Offers</a></li>
+              <li><Link to="/shop" className="text-light footerLink">Products</Link></li>
+            
             </ul>
           </Col>
           <Col md={3}>
             <h5>Books</h5>
             <ul className="list-unstyled">
-              <li><a href="#new-releases" className="text-light">New Releases</a></li>
-              <li><a href="#best-sellers" className="text-light">Best Sellers</a></li>
+              
+              <li><Link to="/resources/book" className="text-light footerLink">Best Sellers</Link></li>
             </ul>
           </Col>
           <Col md={3}>
             <h5>Contact</h5>
             <ul className="list-unstyled">
-              <li><a href="mailto:youremail@example.com" className="text-light">Email Us</a></li>
-              <li><a href="#contact-form" className="text-light">Contact Form</a></li>
-              <li><a href="#social-media" className="text-light">Follow Us</a></li>
+              <li><Link to="/contact" className="text-light footerLink">Email <meta /></Link></li>
+           
             </ul>
           </Col>
         </Row>
