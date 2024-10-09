@@ -10,6 +10,11 @@
 /* .button:hover {
     background-color: #ff9900;
 } */
+
+.aboutContainer {
+    height: fit-content;
+}
+
 #linkClass {
     text-decoration: none;
     color:black

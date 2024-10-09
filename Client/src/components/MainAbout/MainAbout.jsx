@@ -3,7 +3,7 @@ import "./MainAbout.css"
 
 const MainAbout = () => {
   return (
-    <div className="container-xxl py-6" id="about">
+    <div className="container-xxl py-6 mainAbout" id="about">
       <Container>
         <Row className="g-5">
           <Col lg={6} className="wow fadeInUp" data-wow-delay="0.1s">
