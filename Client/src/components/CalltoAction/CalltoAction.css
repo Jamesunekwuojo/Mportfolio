@@ -37,3 +37,14 @@ p {
 /* .container {
     margin-top: ;
 } */
+
+
+@media (max-width: 991px) {
+
+    .ctaMainDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}
