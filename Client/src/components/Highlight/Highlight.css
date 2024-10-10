@@ -36,3 +36,24 @@
 
     
 }
+
+
+@media (max-width:991px) {
+
+    /* .highlightCarousel {
+        max-height: 250px;
+    } */
+
+    /* .highlightContainer{
+        height: 400vh;
+    } */
+
+    .highlightDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin: 10%; */
+    }
+
+    
+}

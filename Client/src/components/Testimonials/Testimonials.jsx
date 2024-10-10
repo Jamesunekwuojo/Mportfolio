@@ -5,7 +5,7 @@ import "./Testimonials.css"
 
 const Testimonials = () => {
   return (
-    <div className="container-fluid bg-light py-5 my-5" id="testimonial">
+    <div className="container-fluid bg-light py-5 my-5" >
       <Container className="py-5">
         <h1 className="subheader text-center mb-5">Testimonial</h1>
         <Row className="justify-content-center">

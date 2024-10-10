@@ -63,11 +63,11 @@ function EmailListing() {
 
   return (
     <Container
-      className="p-4 mt-4 container"
+      className="p-4 mt-4 h-100 emailContainer"
       style={{
         backgroundColor: "#f8f9fa",
         borderRadius: "15px",
-        height: "100vh",
+       
       }}
     >
       <Row>

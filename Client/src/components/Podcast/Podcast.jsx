@@ -34,7 +34,7 @@ function Podcast() {
   };
 
   return (
-    <Container className='mt-4 container'>
+    <Container className='mt-4 h-100 podcastContainer'>
       <Row>
         {/* Video 1 */}
         <Col md={4} className="mb-4">
