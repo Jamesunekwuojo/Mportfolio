@@ -17,7 +17,7 @@ const books = [
   },
 
   {
-    image: "/cover2.jpg",
+    image: "/courage4.jpg",
     header2: "Courage: How Ordinary People Achieve Extraordinary Results",
     text: "Are you a young professional, fresh graduate, or entrepreneur who often finds themselves hesitating to make daring decisions that could change your life for the better? Do you struggle with speaking up and dealing with superiors in the workplace? Are you a parent looking to instill courage in your children so they can face life's challenges head-on? If you answered yes to any of these questions, you're not alone. Many people face these issues, and it can be a significant barrier to personal and professional growth.",
     
@@ -25,7 +25,7 @@ const books = [
   },
 
   {
-    image: "/mindsetcover4.jpg",
+    image: "/mindsetcover5.jpg",
     header2: "Mind Shift: The Secret and Power of Your Mind",
       
     text: "Imagine for a minute that you wake up one morning and see all you have dreamt of come to pass. You will come up with a broad smile with a sense of fulfilment. ",

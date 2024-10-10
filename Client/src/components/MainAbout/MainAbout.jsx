@@ -6,7 +6,7 @@ const MainAbout = () => {
     <div className="container-xxl py-6 mainAbout" id="about">
       <Container>
         <Row className="g-5">
-          <Col lg={6} className="wow fadeInUp" data-wow-delay="0.1s">
+          <Col lg={6} className="" >
             <div className="d-flex align-items-center mb-5">
               <div className="years flex-shrink-0 text-center me-4">
                 <h1 className="display-1 mb-0">M</h1>
