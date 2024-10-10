@@ -15,7 +15,7 @@ const Footer = () => {
               <li><Link to="/highlight" className="text-light footerLink">Highlights</Link></li>
               <li><Link to="/about" className="text-light footerLink">About</Link></li>
               <li><Link to="/testimonials" className="text-light footerLink">Testimonials</Link></li>
-              <li><Link to="/publicSpeak" className="text-light footerLink">Public speaking</Link></li>
+              <li><Link to="/resources/oneCoaching" className="text-light footerLink">Public speaking</Link></li>
             </ul>
           </Col>
           <Col md={3}>
@@ -42,7 +42,8 @@ const Footer = () => {
         </Row>
         <Row className="text-center mt-3">
           <Col>
-            <p>&copy; {new Date().getFullYear()} Your Name | All Rights Reserved</p>
+            <p>&copy; {new Date().getFullYear()} Abiodun Mustapha | All Rights Reserved</p>
+            
           </Col>
         </Row>
       </Container>

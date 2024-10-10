@@ -23,14 +23,14 @@ const Highlight = () => {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://example.com/image2.jpg" // Replace with the correct image path
+                src="/abiodun3.jpg" // Replace with the correct image path
                 alt="Second slide"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://example.com/image3.jpg" // Replace with the correct image path
+                src="abiodun.jpeg" // Replace with the correct image path
                 alt="Third slide"
               />
             </Carousel.Item>

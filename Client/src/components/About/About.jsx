@@ -9,7 +9,7 @@ function About() {
       <Row>
         <Col md={5}>
           <Image
-            src="" // Replace with the actual image path
+            src="/abiodun3.jpg" // Replace with the actual image path
             alt="Coach Profile"
             fluid
             style={{ borderRadius: '15px' }}

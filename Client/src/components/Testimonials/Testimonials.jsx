@@ -65,7 +65,8 @@ const Testimonials = () => {
                     interpersonal relationships is rated above average.
                   </p>
                   <hr className="w-25 mx-auto" />
-                  <h5>Academic Researcher & Lecturer | Biochemist</h5>
+                  <h5>Dr Babatunde</h5>
+                  <span>Academic Researcher & Lecturer | Biochemist</span>
                 </div>
               </Carousel.Item>
 
