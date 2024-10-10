@@ -5,9 +5,9 @@ import "./About.css"
 
 function About() {
   return (
-    <Container className="p-4 mt-4 aboutContainer"  style={{ backgroundColor: '#f8f9fa', borderRadius: '15px',  }}>
+    <Container className="p-4 h-100 aboutContainer"  style={{ backgroundColor: '#f8f9fa', borderRadius: '15px',  }}>
       <Row>
-        <Col md={5}>
+        <Col md={5} className='imageColumn'>
           <Image
             src="/abiodun3.jpg" // Replace with the actual image path
             alt="Coach Profile"

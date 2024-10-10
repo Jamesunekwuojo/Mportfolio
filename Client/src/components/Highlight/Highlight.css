@@ -7,3 +7,32 @@
 /* .container {
     
 } */
+.highlightContainer{
+    height:fit-content ;
+    border-radius: 15px;
+    background-color: blue;
+}
+
+.highlightHeader {
+    color: #6244C5;
+}
+
+@media (max-width:576px) {
+
+    /* .highlightCarousel {
+        max-height: 250px;
+    } */
+
+    /* .highlightContainer{
+        height: 400vh;
+    } */
+
+    .highlightDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin: 10%; */
+    }
+
+    
+}

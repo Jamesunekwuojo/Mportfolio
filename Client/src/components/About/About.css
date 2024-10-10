@@ -12,7 +12,8 @@
 } */
 
 .aboutContainer {
-    height: fit-content;
+    /* height: fit-content; */
+    margin-bottom: 40px;
 }
 
 #linkClass {
@@ -23,3 +24,8 @@
 #about_text1 {
     font-family: Ample Display, sans-serif;
 }
+
+.imageColumn{
+    margin-bottom: 20px;
+}
+

@@ -19,7 +19,7 @@ const Homepage = () => {
            </Row>
            <About></About>
 
-           <Row ><h1 className='subheader text-center '>Highlight</h1></Row>
+           {/* <Row ><h1 className='subheader text-center '>Highlight</h1></Row> */}
 
            <Highlight></Highlight>
 
