@@ -6,9 +6,9 @@ const LandingPics = () => {
 
 
   return (
-    <Container>
+    <Container className=''>
       <Row>
-        <div className="landingContainer   ">
+        <div className="landingContainer mt-4   ">
           <Col lg={6} className="m-auto">
             <AutoTyping></AutoTyping>           
        

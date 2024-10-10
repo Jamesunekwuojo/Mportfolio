@@ -37,7 +37,7 @@
   }
 
   .shopContainer {
-    height: 140vh;
+    height: fit-content;
   }
 
   /* .button {

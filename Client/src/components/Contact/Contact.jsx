@@ -73,7 +73,7 @@ const Contact = () => {
 
 
   return (
-    <Container className="mt-4">
+    <Container className="mt-4 contactContainer">
       <Row>
         <Col>
         <div className="sideDiv p-4">
