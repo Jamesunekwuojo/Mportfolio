@@ -1,23 +1,59 @@
 .button {
-   
-   border: 0px !important
+  border: 0px !important;
 }
 
 @keyframes zoomInOut {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2); /* Zoom in */
-    }
-    100% {
-      transform: scale(1); /* Zoom out */
-    }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); /* Zoom in */
+  }
+  100% {
+    transform: scale(1); /* Zoom out */
+  }
 }
 .videoSvg {
-    cursor: pointer;
-    /* animation: zoom 1.5s infinite; */
-    /* transform: transform 0.5 ease; */
-    animation: zoomInOut 1.5s infinite ease-in-out;
+  cursor: pointer;
+  animation: zoomInOut 1.5s infinite ease-in-out;
+}
 
+/* Ensure iframe scales correctly on mobile devices */
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+}
+
+.embed-responsive-item {
+  position: absolute ;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Media queries to adjust modal and video size for mobile devices */
+@media (max-width: 575.98px) {
+  .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .modal-content {
+    border-radius: 0;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  .modal-open {
+    overflow: hidden; /* Prevent scrolling on the main body when the modal is open */
+  }
 }
