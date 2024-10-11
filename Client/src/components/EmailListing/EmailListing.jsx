@@ -36,7 +36,7 @@ function EmailListing() {
       )
       .then(
         (result) => {
-          alert("Message sent successfully to " + formData.recipientEmail);
+          // alert("Message sent successfully to " + formData.recipientEmail);
           Swal.fire({
             title: 'Success!',
             text: 'Subscribed successfully.',
@@ -46,7 +46,7 @@ function EmailListing() {
           console.log("message sent successfully", result);
         },
         (error) => {
-          alert("An error occurred. Please try again.");
+          // alert("An error occurred. Please try again.");
           Swal.fire({
             title: 'Error!',
             text: 'An error occurred.Please try again.',
