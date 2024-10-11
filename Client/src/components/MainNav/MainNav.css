@@ -51,11 +51,41 @@ for positioning the brands */
 /* .navDropdown .dropdown-item:hover {
     background-color: #ff9900; /* Change this color for hover effect */
 
-.mainnavDiv {
-    height: 107vh;
-    background-color: #6244C5;
-    /* width: 100vw; */
+@media (min-width:1024px) {
+
+    .mainnavDiv {
+        /* height: fit-content;
+        background-color: #6244C5; */
+        /* width: 100vw; */
+    
+        transition: height 0.5s ease; /* Smooth transition */
+        background-color: #6244C5;
+        overflow: hidden;
+    }
+    
+    /* When on the home route, the height is 107vh */
+    .not-scrolled {
+        height: fit-content; /* 107% viewport height for the home page */
+    }
+    
+    /* When scrolled up (on other routes), the height should only fit the navbar */
+    .scrolled-up-nav {
+        height: 20vh; /* Adjust this value to fit the Navbar, around 10vh or so */
+    }
+
+    .landingpicsContainer {
+        transition: transform 0.5s ease; /* Smooth transition */
+    }
+    
+    /* When the route changes (other than home), scroll it up */
+    .scrolled-up {
+        transform: translateY(-100vh); /* Moves the section 100vh upwards */
+    }
+
 }
+
+
+
 
 .navbarCustom {
     width:90%;
@@ -71,11 +101,13 @@ for positioning the brands */
 
 
 
+
 /*mobile*/
 @media (max-width: 767px) {
     .mainnavDiv {
         height: 120vh;
         overflow-x: hidden;
+        background-color: #6244C5;
     
        
     }
@@ -119,6 +151,7 @@ for positioning the brands */
     .mainnavDiv {
         height: auto;
         overflow-x: hidden;
+        background-color: #6244C5;
     
        
     }

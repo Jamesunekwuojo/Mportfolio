@@ -2,11 +2,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./LandingPics.css";
 import AutoTyping from "../AutoTyping/AutoTyping";
 
-const LandingPics = () => {
+const LandingPics = ({className}) => {
 
 
   return (
-    <Container className=''>
+    <Container className={`h-100 ${className}`}>
       <Row>
         <div className="landingContainer mt-4   ">
           <Col lg={6} className="m-auto">
