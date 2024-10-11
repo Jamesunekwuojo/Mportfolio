@@ -13,3 +13,19 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+@media (max-width: 575.98px) {
+
+    
+.blogContainer {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    
+}
+
+@media (max-width:991px) {
+    
+}

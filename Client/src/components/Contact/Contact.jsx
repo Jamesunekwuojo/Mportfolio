@@ -11,7 +11,7 @@ import Swal from 'sweetalert2';
 
 
 const serviceId = import.meta.env.VITE_SERVICE_ID;
-const templateId = import.meta.env.VITE_TEMPLATE_ID;
+const templateId = import.meta.env.VITE_TEMPLATE_ID_ONE;
 const publicId = import.meta.env.VITE_PUBLIC_ID 
 
 console.log(serviceId, templateId, publicId); //  To check if they are correctly loaded

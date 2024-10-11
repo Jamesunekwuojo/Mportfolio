@@ -4,7 +4,7 @@ import VideoSection from '../VideoSection';
 import Button from '../Button/Button.jsx'
 
 const AutoTyping = () => {
-  const textToType =  "Meet Abiodun Mustapha  a dedicated Personal Development";
+  const textToType =  "Meet Abiodun Mustapha  a dedicated Personal Development expert.";
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
 
