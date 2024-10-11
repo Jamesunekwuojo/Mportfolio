@@ -45,18 +45,18 @@ const Contact = () => {
       publicId     // Replace with your EmailJS user ID
     )
     .then((result) => {
-      alert('Message sent successfully to ' + formData.recipientEmail);
+     
 
       Swal.fire({
         title: 'Success!',
-        text: 'Message dent successfully.',
+        text: 'Message sent successfully.',
         icon: 'success',
         confirmButtonText: 'OK'
       });
      
       console.log("message sent successfully", result)
     }, (error) => {
-      alert('An error occurred. Please try again.');
+  
       Swal.fire({
         title: 'Error!',
         text: 'An error occurred. Please try again',
