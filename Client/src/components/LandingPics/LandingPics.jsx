@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import "./LandingPics.css";
+import "./Temp.css";
 import AutoTyping from "../AutoTyping/AutoTyping";
 
 const LandingPics = ({className}) => {
