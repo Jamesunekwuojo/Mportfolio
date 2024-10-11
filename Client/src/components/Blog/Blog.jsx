@@ -7,7 +7,7 @@ const Blog = () => {
     return (
         <Container style={{height:'80vh'}}>
             <Row className="mt-4" >
-                <div className='d-flex flex-row justify-content-between ' >
+                <div className='blogContainer  ' >
                     <div className='text-center'>
                       <img className='imageItem' src='/blog1.png' alt='abiodun image'/>
                       <h4>How To Use Your No's</h4>
