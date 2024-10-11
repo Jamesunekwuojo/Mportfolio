@@ -81,6 +81,15 @@ const MainNav = () => {
                   >
                     Blog
                   </NavDropdown.Item>
+
+                  <NavDropdown.Item
+                    as={Link}
+                    className={`nav-link ${activeLink === "/resources/oneCoaching" ? "active-link" : ""}`}
+                    onClick={() => handleLinkClick("/resources/oneCoaching")}
+                    to="/resources/oneCoaching"
+                  >
+                    Speaking Engagement
+                  </NavDropdown.Item>
                 </NavDropdown>
                 {/* Shop and Contact */}
                 <Nav.Link

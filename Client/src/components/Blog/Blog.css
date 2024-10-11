@@ -27,5 +27,11 @@
 }
 
 @media (max-width:991px) {
+
+    .blogContainer {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     
 }
