@@ -20,8 +20,9 @@ const App = () => {
   // toast.configure(); // correct configuration of toast messahes
 
   return(
-    <ScrollToTop/>
+
     <Router>
+      <ScrollToTop/>
       <MainNav></MainNav>
 
       <Routes>
