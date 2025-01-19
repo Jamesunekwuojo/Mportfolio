@@ -13,12 +13,14 @@ import Podcast from "./components/Podcast/Podcast.jsx";
 import Highlight from "./components/Highlight/Highlight.jsx";
 import Testimonials from "./components/Testimonials/Testimonials.jsx";
 import About from "./components/About/About.jsx";
+import ScrollToTop from "./ScrollToTop.jsx"
 // import {toast} from 'react-toastify'
 const App = () => {
 
   // toast.configure(); // correct configuration of toast messahes
 
   return(
+    <ScrollToTop/>
     <Router>
       <MainNav></MainNav>
 
